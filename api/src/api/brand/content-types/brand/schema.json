@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "brands",
+  "info": {
+    "singularName": "brand",
+    "pluralName": "brands",
+    "displayName": "brand",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "img": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "desc1": {
+      "type": "string"
+    },
+    "desc2": {
+      "type": "string"
+    },
+    "desc3": {
+      "type": "string"
+    },
+    "desc4": {
+      "type": "string"
+    },
+    "desc5": {
+      "type": "string"
+    },
+    "desc6": {
+      "type": "string"
+    },
+    "vin1": {
+      "type": "string"
+    },
+    "vin2": {
+      "type": "string"
+    },
+    "vin3": {
+      "type": "string"
+    },
+    "vin4": {
+      "type": "string"
+    },
+    "vin5": {
+      "type": "string"
+    },
+    "vin6": {
+      "type": "string"
+    }
+  }
+}

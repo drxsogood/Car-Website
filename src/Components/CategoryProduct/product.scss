@@ -1,0 +1,62 @@
+.home {
+  text-align: center;
+}
+.search-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+
+  input {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 8px 12px;
+    margin-right: 300px; /* Add margin to separate the button from the input */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the content horizontally */
+}
+
+.product-card {
+  width: calc(33.33% - 40px); /* Set the width of each card to 33.33% to create a 3-column layout */
+  margin: 20px; /* Add margin around each card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for a card effect */
+  transition: transform 0.2s ease-in-out; /* Add a smooth transition effect on hover */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Enlarge the card on hover for a zoom effect */
+}
+
+.product-card img {
+  width: 100%; /* Make sure the image takes up the full width of the card */
+  height: auto; /* Maintain the aspect ratio of the image */
+  object-fit: cover; /* Ensure the entire image is visible without stretching */
+}
+
+/* Create a responsive layout for smaller screens */
+@media (max-width: 767px) {
+  .product-card {
+    width: calc(50% - 40px); /* Adjust the width for smaller screens to fit 2 cards per row */
+  }
+}

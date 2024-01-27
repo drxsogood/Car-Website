@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dealers",
+  "info": {
+    "singularName": "dealer",
+    "pluralName": "dealers",
+    "displayName": "Dealer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "number": {
+      "type": "biginteger"
+    },
+    "email": {
+      "type": "email"
+    },
+    "groupdealers": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::groupdealer.groupdealer",
+      "mappedBy": "dealers"
+    },
+    "Soldcar": {
+      "type": "integer"
+    }
+  }
+}

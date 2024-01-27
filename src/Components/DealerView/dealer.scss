@@ -1,0 +1,47 @@
+.two {
+    padding: 5rem 0 0 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .two-room {
+    width: 100vw;
+    max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+    margin: 0 auto;
+    display: grid;
+    justify-content: center; /* Center the grid items horizontally */
+  }
+  
+  .two-room img {
+    height: auto; /* Maintain the aspect ratio */
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .two-room img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media screen and (min-width: 992px) {
+    .two-room,
+    .single-room-info,
+    .car-extras {
+      width: 95vw;
+      max-width: 1170px;
+    }
+  
+    .single-room-info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 2rem;
+    }
+  
+    .info {
+      padding-left: 3rem;
+    }
+  }
+  

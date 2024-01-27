@@ -1,0 +1,69 @@
+.home {
+    text-align: center;
+  }
+  
+  .toggle-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  .dropdown-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content button {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  /* Add styling for the sorted dealers here */
+  .product-cards.sorted {
+    border: 2px solid #007bff;
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the content horizontally */
+  }
+  
+  .product-cards {
+    width: calc(33.33% - 40px);
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    box-sizing: border-box;
+  }
+  
+  .product-cards:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-cards img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Create a responsive layout for smaller screens */
+  @media (max-width: 767px) {
+    .product-cards {
+      width: calc(50% - 40px);
+    }
+  }
+  

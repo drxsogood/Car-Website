@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "groupdealers",
+  "info": {
+    "singularName": "groupdealer",
+    "pluralName": "groupdealers",
+    "displayName": "Groupdealer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "dealers": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::dealer.dealer",
+      "inversedBy": "groupdealers"
+    }
+  }
+}

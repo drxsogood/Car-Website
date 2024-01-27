@@ -1,0 +1,105 @@
+.single-room {
+  padding: 5rem 0 0 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.single-room-images {
+  width: 100vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 50px;
+}
+
+.single-room-images img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px; /* Rounded corners */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transition effect for transform and box-shadow */
+}
+
+.single-room-images img:hover {
+  transform: scale(1.05); /* Scale up the image on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover */
+}
+
+.single-room-info {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 2rem auto;
+}
+
+.desc,
+.info {
+  margin: 1rem 0;
+}
+
+.info-1 {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.desc h3 {
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+}
+
+.desc p {
+  line-height: 1.5;
+}
+
+.info h3,
+.info h6 {
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+}
+
+.info h6 {
+  font-weight: 300;
+}
+
+.buy-button-container {
+  text-align: center;
+  margin-top: 20px;
+
+  .buy-button {
+    padding: 10px 20px;
+    background: var(--primaryColor);
+    color: var(--whiteColor);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+
+    &:hover {
+      background: var(--secondaryColor);
+      color: var(--textColor);
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .single-room-images,
+  .single-room-info,
+  .car-extras {
+    width: 95vw;
+    max-width: 1170px;
+  }
+
+  .single-room-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+  }
+
+  .info {
+    padding-left: 3rem;
+  }
+}
